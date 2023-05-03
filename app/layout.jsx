@@ -1,3 +1,4 @@
+
 import './globals.css'
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
@@ -10,10 +11,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    
     <html lang="en">
+   
       <body className={inter.className}>
-        <Navigation/>
+     
+        <Navigation />
+       <div className="container mx-auto p-4">
         {children}
+       </div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
       </body>
     </html>
   )
